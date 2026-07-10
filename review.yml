@@ -1,0 +1,93 @@
+aid: ezlynx
+name: EZLynx
+review:
+  question: Does EZLynx expose a documented public WebSocket API?
+  answer: false
+  date: '2026-07-10'
+  reviewer: API Evangelist
+  asyncapiSpecCreated: false
+  asyncapiScopeNote: |
+    No AsyncAPI document was authored. EZLynx's event-driven layer is delivered
+    as one-way HTTP webhook callouts (event payloads in XML or JSON) to a
+    subscriber's endpoint, not as a server-push WebSocket or SSE stream on
+    EZLynx's own API. Because the API is partner and enterprise-gated, no public
+    channel, message, or binding definitions are published that could be modeled
+    accurately, so no AsyncAPI spec was created.
+findings:
+  summary: |
+    EZLynx does not publish a documented public WebSocket API. EZLynx is an
+    insurance agency platform (real-time comparative rating, agency management
+    system, and CRM for P&C agencies) that has been part of Applied Systems
+    since March 2021. It offers enterprise API solutions, but access is partner
+    and enterprise-gated: there is no public self-serve developer portal, no
+    published pricing, and no openly hosted API reference. Public product and
+    integration material indicates the API is REST over HTTPS with OAuth 2.0
+    authentication, data in XML or JSON, and an event-driven layer delivered via
+    HTTP webhooks. No realtime, bidirectional, or streaming WebSocket (ws:// or
+    wss://) endpoint is documented anywhere in EZLynx's public material.
+  accessModel: |
+    Partner and enterprise-gated. The EZLynx API is positioned as an
+    enterprise-grade integration for high-volume agencies and technology
+    partners. Prospective integrators contact EZLynx / Applied Systems sales
+    rather than signing up for a public API key. A Postman-hosted API collection
+    (documenter.getpostman.com/view/17108315/UVXjHahb) exists as reference, but
+    the working credentials, base URL, and full endpoint surface are provided
+    under a partner or enterprise agreement, not published openly.
+  endpointsModeled: true
+  endpointsModeledNote: |
+    The API entries in apis.yml are honestly modeled from EZLynx's public
+    product pages, integration write-ups, and the referenced Postman collection
+    description - NOT copied from a published open reference. EZLynx's public
+    material states the API is used to create and update applicants, contacts,
+    prospects, and opportunities; create policy headers; and read quote results,
+    email templates, documents, and user data, plus drive the EZLynx Rating
+    Engine and consume event webhooks. Because the concrete request paths and
+    base URL are gated, no specific endpoint paths were fabricated. No OpenAPI,
+    plans, rate-limits, finops, or collections files were authored, since no
+    public sourced values exist for them.
+  transports:
+    - protocol: REST
+      scheme: https
+      documented: partial
+      note: Public material describes REST over HTTPS with OAuth 2.0 and XML/JSON payloads; concrete base URL and paths are partner-gated.
+    - protocol: Webhook
+      scheme: https
+      documented: partial
+      note: Event-driven layer delivers change events (XML or JSON) via one-way HTTP webhook callouts to a subscriber endpoint. Not WebSocket.
+    - protocol: WebSocket
+      scheme: wss
+      documented: false
+      note: No WebSocket endpoint is documented anywhere in EZLynx's public product, API, or integration material as of the review date.
+  logicalApisModeled:
+    - EZLynx Applicants and Contacts API (applicants, contacts, prospects, opportunities)
+    - EZLynx Rating Engine API (automated comparative quoting, quote results, QAS, Data Bridge)
+    - EZLynx Policies API (create policy headers, retrieve policy information)
+    - EZLynx Management System Data API (email templates, documents, user data)
+    - EZLynx Events and Webhooks API (XML/JSON change events via HTTP webhooks)
+sources:
+  - url: https://www.ezlynx.com/products/ezlynx-api-solutions/
+    type: Documentation
+    note: EZLynx API solutions - real-time data exchange, automated quoting, custom workflows, QAS. Marketing-level, no open reference.
+  - url: https://www.ezlynx.com/insurance-api.html
+    type: Documentation
+    note: Insurance API overview - data integration, event-driven architecture (XML/JSON events), webhook real-time updates.
+  - url: https://documenter.getpostman.com/view/17108315/UVXjHahb
+    type: APIReference
+    note: Postman-hosted EZLynxAPI collection reference (applicants, contacts, prospects, opportunities, policy headers, quote results, documents, email templates, user data). SPA content not machine-readable without gated access.
+  - url: https://www.ezlynx.com/solutions/enterprise/
+    type: Documentation
+    note: Enterprise solutions - contact-sales access model, no public pricing.
+  - url: https://www1.appliedsystems.com/en-us/news/press-releases/2021/applied-systems-completes-acquisition-of-ezlynx/
+    type: PressRelease
+    note: Applied Systems completed acquisition of EZLynx, March 9, 2021.
+actions:
+  asyncapiPath: null
+  apisYmlUpdated: true
+  reason: |
+    No WebSocket protocol surface exists. EZLynx's own public API is REST over
+    HTTPS (OAuth 2.0) with an HTTP webhook event layer; both are gated behind a
+    partner or enterprise agreement. No AsyncAPI document was created because
+    there is no publicly documented server-push transport to model and no public
+    channel definitions to model it from. The apis.yml catalog was authored with
+    logical APIs honestly modeled and flagged endpointsModeled; no endpoint
+    paths were fabricated.

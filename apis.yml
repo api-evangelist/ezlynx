@@ -1,0 +1,147 @@
+aid: ezlynx
+url: https://raw.githubusercontent.com/api-evangelist/ezlynx/refs/heads/main/apis.yml
+name: EZLynx
+kind: company
+description: >-
+  EZLynx is an insurance agency platform combining real-time comparative rating,
+  an agency management system (AMS), and CRM for independent property and
+  casualty (P&C) insurance agencies. Part of Applied Systems since 2021, EZLynx
+  offers enterprise API solutions that let agencies push and pull data, create
+  and update applicants, contacts, prospects, and opportunities, create policy
+  headers, retrieve policy and quote-result data, and drive high-volume
+  automated quoting through the EZLynx Rating Engine and Quoting Automation
+  Services (QAS). An event-driven layer emits webhooks in XML or JSON for
+  platform changes. API access is partner and enterprise-gated (contact sales,
+  OAuth 2.0), not a public self-serve developer program, so the API surface
+  below is honestly modeled from EZLynx's public product and integration
+  material rather than a published open reference.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- Insurance
+- InsurTech
+- Comparative Rating
+- Agency Management System
+- CRM
+- Quoting
+- Property and Casualty
+- Applied Systems
+created: '2026-07-10'
+modified: '2026-07-10'
+specificationVersion: '0.19'
+apis:
+- aid: ezlynx:ezlynx-applicants-contacts-api
+  name: EZLynx Applicants and Contacts API
+  tags:
+  - Applicants
+  - Contacts
+  - Prospects
+  - Opportunities
+  - CRM
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://www.ezlynx.com/products/ezlynx-api-solutions/
+  properties:
+  - url: https://www.ezlynx.com/products/ezlynx-api-solutions/
+    type: Documentation
+  - url: https://www.ezlynx.com/insurance-api.html
+    type: Documentation
+  - url: https://documenter.getpostman.com/view/17108315/UVXjHahb
+    type: APIReference
+  description: >-
+    Create and update applicants, contacts, prospects, and opportunities in the
+    EZLynx management system and CRM so external lead-capture, marketing, and
+    onboarding tools stay in sync without rekeying data. Endpoints are modeled
+    from EZLynx's public product material; the concrete request paths are only
+    available under a partner or enterprise API agreement.
+- aid: ezlynx:ezlynx-rating-engine-api
+  name: EZLynx Rating Engine API
+  tags:
+  - Rating
+  - Quotes
+  - Quoting Automation
+  - Data Bridge
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://www.ezlynx.com/products/ezlynx-api-solutions/
+  properties:
+  - url: https://www.ezlynx.com/products/ezlynx-api-solutions/
+    type: Documentation
+  - url: https://documenter.getpostman.com/view/17108315/UVXjHahb
+    type: APIReference
+  description: >-
+    Submit applicant and risk data to the EZLynx Rating Engine for high-volume
+    automated comparative quoting and retrieve quote results. Surfaces the
+    backend behind Quoting Automation Services (QAS), which lets a partner build
+    its own quoting UI while EZLynx runs the rating, and EZLynx Data Bridge for
+    rapid applicant and risk data entry. Endpoints modeled; access is partner
+    and enterprise-gated.
+- aid: ezlynx:ezlynx-policies-api
+  name: EZLynx Policies API
+  tags:
+  - Policies
+  - Policy Headers
+  - Download
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://www.ezlynx.com/products/ezlynx-api-solutions/
+  properties:
+  - url: https://www.ezlynx.com/products/ezlynx-api-solutions/
+    type: Documentation
+  - url: https://documenter.getpostman.com/view/17108315/UVXjHahb
+    type: APIReference
+  description: >-
+    Create policy headers and retrieve policy information from the EZLynx
+    management system so downstream accounting, servicing, and reporting systems
+    can consume book-of-business data. Endpoints modeled from EZLynx's public
+    product material; concrete paths require a partner or enterprise agreement.
+- aid: ezlynx:ezlynx-management-system-data-api
+  name: EZLynx Management System Data API
+  tags:
+  - Documents
+  - Email Templates
+  - Users
+  - Management System
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://www.ezlynx.com/products/ezlynx-api-solutions/
+  properties:
+  - url: https://www.ezlynx.com/products/ezlynx-api-solutions/
+    type: Documentation
+  - url: https://documenter.getpostman.com/view/17108315/UVXjHahb
+    type: APIReference
+  description: >-
+    Read supporting management-system data - email templates, documents, and
+    user data - so integrated applications can reuse an agency's content and
+    org structure. Endpoints modeled; access is partner and enterprise-gated.
+- aid: ezlynx:ezlynx-events-webhooks-api
+  name: EZLynx Events and Webhooks API
+  tags:
+  - Events
+  - Webhooks
+  - Event Driven
+  - Notifications
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  humanURL: https://www.ezlynx.com/products/ezlynx-api-solutions/
+  properties:
+  - url: https://www.ezlynx.com/products/ezlynx-api-solutions/
+    type: Documentation
+  - url: https://www.ezlynx.com/insurance-api.html
+    type: Documentation
+  description: >-
+    Consume EZLynx's event-driven layer - webhook notifications delivered in XML
+    or JSON when platform data changes, such as new clients or policy updates -
+    to trigger downstream automation. Delivery is one-way HTTP webhook callouts,
+    not a public WebSocket. Event shapes modeled from EZLynx's public product
+    material; subscription is partner and enterprise-gated.
+common:
+- type: LinkedIn
+  url: https://www.linkedin.com/company/ezlynx
+- type: Website
+  url: https://www.ezlynx.com
+- type: Documentation
+  url: https://www.ezlynx.com/products/ezlynx-api-solutions/
+- type: APIReference
+  url: https://documenter.getpostman.com/view/17108315/UVXjHahb
+- type: SignUp
+  url: https://www.ezlynx.com/solutions/enterprise/
+- type: Blog
+  url: https://www.ezlynx.com/blog/
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
