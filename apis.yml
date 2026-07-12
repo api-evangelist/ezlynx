@@ -130,6 +130,12 @@ apis:
     not a public WebSocket. Event shapes modeled from EZLynx's public product
     material; subscription is partner and enterprise-gated.
 common:
+- type: TrustCenter
+  url: security/ezlynx-trust-center.yml
+- type: VulnerabilityDisclosure
+  url: security/ezlynx-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/ezlynx-domain-security.yml
 - type: LinkedIn
   url: https://www.linkedin.com/company/ezlynx
 - type: Website
