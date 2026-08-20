@@ -29,6 +29,15 @@ accessModel:
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ezlynx.png
 tags:
 - Insurance
+- Insurtech
+- Comparative Rating
+- Agency Management System
+- CRM
+- Quoting
+- Property and Casualty
+- Applied Systems
+tags_raw:
+- Insurance
 - InsurTech
 - Comparative Rating
 - Agency Management System
@@ -89,6 +98,10 @@ apis:
   tags:
   - Policies
   - Policy Headers
+  - Downloads
+  tags_raw:
+  - Policies
+  - Policy Headers
   - Download
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
   humanURL: https://www.ezlynx.com/products/ezlynx-api-solutions/
@@ -107,6 +120,11 @@ apis:
   tags:
   - Documents
   - Email Templates
+  - User
+  - Management System
+  tags_raw:
+  - Documents
+  - Email Templates
   - Users
   - Management System
   image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
@@ -123,6 +141,11 @@ apis:
 - aid: ezlynx:ezlynx-events-webhooks-api
   name: EZLynx Events and Webhooks API
   tags:
+  - Event
+  - Webhook
+  - Event-Driven
+  - Notification
+  tags_raw:
   - Events
   - Webhooks
   - Event Driven
