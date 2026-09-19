@@ -86,6 +86,11 @@ apis:
 - aid: ezlynx:ezlynx-rating-engine-api
   name: EZLynx Rating Engine API
   tags:
+  - Ratings
+  - Quotes
+  - Quoting Automation
+  - Data Bridge
+  tags_raw:
   - Rating
   - Quotes
   - Quoting Automation
