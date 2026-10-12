@@ -1,0 +1,461 @@
+generated: '2026-10-12'
+method: searched
+source:
+- https://zapier.com/apps/ezlynx/integrations
+checked:
+- https://composio.dev/toolkits/ezlynx
+- https://monid.ai/tools/ezlynx
+- https://n8n.io/integrations/ezlynx/
+- https://zapier.com/apps/ezlynx/integrations
+summary: null
+marketplace_apps:
+- marketplace: zapier
+  channel: ipaas-listing
+  app: ezlynx
+  url: https://zapier.com/apps/ezlynx/integrations
+  external_url: http://www.ezlynx.com/
+  partner_tier: BRONZE
+  triggers:
+  - key: applicantCreated
+    label: New Applicant
+  - key: applicantUpdated
+    label: Modified Applicant
+  - key: commercialApplicantCreated
+    label: New Commercial Applicant
+  - key: commercialApplicantUpdated
+    label: Modified Commercial Applicant
+  - key: commercialProspectCreated
+    label: New Commercial Prospect
+  - key: commercialProspectUpdated
+    label: Modified Commercial Prospect
+  - key: documentCreated
+    label: New Document
+  - key: documentUpdated
+    label: Modified Document
+  - key: noteCreated
+    label: New Note
+  - key: opportunityCreated
+    label: New Opportunity
+  - key: opportunityUpdated
+    label: Modified Opportunity
+  - key: prospectCreated
+    label: New Prospect
+  - key: prospectUpdated
+    label: Modified Prospect
+  actions:
+  - key: commercialApplicantUpdate
+    label: Update Commercial Applicant
+  - key: commercialApplicantWithOpportunity
+    label: Create Commercial Applicant With Opportunity
+  - key: commercialProspect
+    label: Create Commercial Prospect
+  - key: document
+    label: Create Document
+  - key: note
+    label: Create Note
+  - key: personalApplicantWithOpportunity
+    label: Create Personal Applicant With Opportunity
+  - key: personalProspect
+    label: Create Personal Prospect
+  - key: updatePersonalApplicant
+    label: Update Personal Applicant
+  searches:
+  - key: commercialApplicant
+    label: Search Commercial Applicants
+  - key: personalApplicant
+    label: Search Personal Applicants
+edges:
+- partner_name: AgencyZoom
+  partner: agencyzoom
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ezlynx/integrations/agencyzoom-ca67272
+  direction: third-party
+  category: CRM (Customer Relationship Management)
+  partner_url: http://www.agencyzoom.com/
+- partner_name: Gmail
+  partner: gmail
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ezlynx/integrations/gmail
+  direction: third-party
+  category: Email
+  partner_url: https://mail.google.com/
+- partner_name: RingCentral
+  partner: ringcentral
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ezlynx/integrations/ringcentral
+  direction: third-party
+  category: Phone & SMS
+  partner_url: http://www.ringcentral.com/
+- partner_name: HubSpot
+  partner: hubspot
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ezlynx/integrations/hubspot
+  direction: third-party
+  category: Marketing Automation
+  partner_url: http://www.hubspot.com/
+- partner_name: Microsoft Outlook
+  partner: microsoft-outlook
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ezlynx/integrations/microsoft-outlook
+  direction: third-party
+  category: Calendar
+  partner_url: https://outlook.live.com/
+- partner_name: LeadConnector
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ezlynx/integrations/leadconnector
+  direction: third-party
+  category: Marketing Automation
+  partner_url: https://www.leadconnectorhq.com/
+- partner_name: Pipedrive
+  partner: pipedrive
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ezlynx/integrations/pipedrive
+  direction: third-party
+  category: CRM (Customer Relationship Management)
+  partner_url: https://pipedrive.com/
+- partner_name: Quo
+  partner: quo
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ezlynx/integrations/quo
+  direction: third-party
+  category: Phone & SMS
+  partner_url: https://quo.com/?utm_source=partnership&utm_medium=partner&utm_campaign=zapier
+- partner_name: Canopy Connect
+  partner: canopy
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ezlynx/integrations/canopy-connect
+  direction: third-party
+  category: Website & App Building
+  partner_url: https://usecanopy.com/
+- partner_name: Google Sheets
+  partner: google-sheets
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ezlynx/integrations/google-sheets
+  direction: third-party
+  category: Google
+  partner_url: http://sheets.google.com/
+- partner_name: Ramsey Pro Portal
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ezlynx/integrations/ramseytrusted-pro-portal-ca20531
+  direction: third-party
+  category: CRM (Customer Relationship Management)
+  partner_url: https://www.ramseysolutions.com/insurance/property-casualty-pro
+- partner_name: Sembley
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ezlynx/integrations/sembley
+  direction: third-party
+  category: Productivity
+  partner_url: https://sembley.com/
+- partner_name: SALT
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ezlynx/integrations/salt
+  direction: third-party
+  category: Forms & Surveys
+  partner_url: https://saltinsure.com/
+- partner_name: ActiveCampaign
+  partner: activecampaign
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ezlynx/integrations/activecampaign
+  direction: third-party
+  category: Marketing Automation
+  partner_url: https://www.activecampaign.com/?utm_source=unpaid_syndication_website&utm_medium=referral&utm_campaign=zapier_listing
+- partner_name: Dialpad
+  partner: dialpad
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ezlynx/integrations/dialpad
+  direction: third-party
+  category: Phone & SMS
+  partner_url: https://www.dialpad.com/
+- partner_name: Zoho CRM
+  partner: zoho-crm
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ezlynx/integrations/zoho-crm
+  direction: third-party
+  category: CRM (Customer Relationship Management)
+  partner_url: https://go.zoho.com/wOk
+- partner_name: TextUs
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ezlynx/integrations/textus
+  direction: third-party
+  category: Phone & SMS
+  partner_url: https://textus.com/
+- partner_name: QuickBooks Online
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ezlynx/integrations/quickbooks
+  direction: third-party
+  category: Accounting
+  partner_url: http://intuit.com/
+- partner_name: InsuranceXDate
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ezlynx/integrations/insurancexdate
+  direction: third-party
+  category: Business Intelligence
+  partner_url: https://www.insurancexdate.com/
+- partner_name: Twilio
+  partner: twilio
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ezlynx/integrations/twilio
+  direction: third-party
+  category: Phone & SMS
+  partner_url: https://www.twilio.com/
+- partner_name: Cognito Forms
+  partner: cognito-forms
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ezlynx/integrations/cognito-forms
+  direction: third-party
+  category: Forms & Surveys
+  partner_url: https://www.cognitoforms.com/
+- partner_name: Kommo
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ezlynx/integrations/kommo
+  direction: third-party
+  category: CRM (Customer Relationship Management)
+  partner_url: https://www.kommo.com/integrations/zapier/?utm_source=&utm_campaign=integration&utm_medium=referral&utm_content=zapier
+- partner_name: Salesforce
+  partner: salesforce
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ezlynx/integrations/salesforce
+  direction: third-party
+  category: CRM (Customer Relationship Management)
+  partner_url: https://www.salesforce.com/
+- partner_name: CallRail
+  partner: callrail
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ezlynx/integrations/callrail
+  direction: third-party
+  category: Call Tracking
+  partner_url: https://www.callrail.com/?utm_medium=strategicpartner&utm_source=zapier&utm_campaign=app_listing&utm_content=app_listing
+- partner_name: DialZara
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ezlynx/integrations/dialzara
+  direction: third-party
+  category: AI Assistants
+  partner_url: https://www.dialzara.com/
+- partner_name: WordPress
+  partner: wordpress
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ezlynx/integrations/wordpress
+  direction: third-party
+  category: Website Builders
+  partner_url: https://wordpress.org/
+- partner_name: Bland AI
+  partner: bland-ai
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ezlynx/integrations/bland-ai
+  direction: third-party
+  category: AI Agents
+  partner_url: https://app.bland.com/
+- partner_name: Fireflies.ai
+  partner: fireflies
+  partner_match: name-exact
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ezlynx/integrations/fireflies
+  direction: third-party
+  category: Transcription
+  partner_url: https://fireflies.ai/
+- partner_name: Facebook Messenger
+  partner: null
+  partner_match: null
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ezlynx/integrations/facebook-messenger
+  direction: third-party
+  category: Facebook
+  partner_url: https://www.messenger.com/
+- partner_name: Retell AI
+  partner: retell-ai
+  partner_match: domain
+  partner_candidate: null
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ezlynx/integrations/retell-ai
+  direction: third-party
+  category: AI Agents
+  partner_url: https://www.retellai.com/?utm_source=Zapier&utm_medium=Marketplace
+templates:
+- title: Create personal leads in AgencyZoom for new EZLynx applicants
+  url: https://zapier.com/apps/agencyzoom-ca67272/integrations/ezlynx/217322/create-personal-leads-in-agencyzoom-for-new-ezlynx-applicants
+  apps:
+  - ezlynx
+  - agencyzoom-ca67272
+- title: Update opportunity statuses in Ramsey Pro Portal from newly modified opportunities in EZLynx
+  url: https://zapier.com/apps/ezlynx/integrations/ramseytrusted-pro-portal-ca20531/255568430/update-opportunity-statuses-in-ramsey-pro-portal-from-newly-modified-opportunities-in-ezlynx
+  apps:
+  - ezlynx
+  - filter
+  - ramseytrusted-pro-portal-ca20531
+- title: Create new EZLynx applicants with opportunities from new Jotform submissions
+  url: https://zapier.com/apps/ezlynx/integrations/jotform/1597831/create-new-ezlynx-applicants-with-opportunities-from-new-jotform-submissions
+  apps:
+  - jotform
+  - ezlynx
+- title: Create personal applicants in EZLynx for new personal leads in AgencyZoom
+  url: https://zapier.com/apps/agencyzoom-ca67272/integrations/ezlynx/217366/create-personal-applicants-in-ezlynx-for-new-personal-leads-in-agencyzoom
+  apps:
+  - agencyzoom-ca67272
+  - filter
+  - ezlynx
+- title: Add new commercial applicants from EZLynx to Sembley
+  url: https://zapier.com/apps/ezlynx/integrations/sembley/1784352/add-new-commercial-applicants-from-ezlynx-to-sembley
+  apps:
+  - ezlynx
+  - sembley
+- title: Create commercial applicants with opportunities in EZlynx for new insureds in Sembley sent to Zapier
+  url: https://zapier.com/apps/ezlynx/integrations/sembley/255614126/create-commercial-applicants-with-opportunities-in-ezlynx-for-new-insureds-in-sembley-sent-to-zapier
+  apps:
+  - sembley
+  - ezlynx
+- title: Create personal applicants with opportunities in Ezlynx from new AgencyZoom leads
+  url: https://zapier.com/apps/agencyzoom-ca67272/integrations/ezlynx/405554/create-personal-applicants-with-opportunities-in-ezlynx-from-new-agencyzoom-leads
+  apps:
+  - agencyzoom-ca67272
+  - ezlynx
+- title: Add new EZLynx contacts to Pluto CRM
+  url: https://zapier.com/apps/ezlynx/integrations/pluto/255646798/add-new-ezlynx-contacts-to-pluto-crm
+  apps:
+  - ezlynx
+  - pluto
+- title: Create personal prospects in EZLynx for every new submission in Jotform
+  url: https://zapier.com/apps/ezlynx/integrations/jotform/1601937/create-personal-prospects-in-ezlynx-for-every-new-submission-in-jotform
+  apps:
+  - jotform
+  - ezlynx
+- title: Create new EZLynx applicants with opportunities from completed Canopy Connect pulls
+  url: https://zapier.com/apps/canopy-connect/integrations/ezlynx/1733144/create-new-ezlynx-applicants-with-opportunities-from-completed-canopy-connect-pulls
+  apps:
+  - canopy-connect
+  - ezlynx
+- title: Update EZLynx personal applicants from new Google Sheets rows
+  url: https://zapier.com/apps/ezlynx/integrations/google-sheets/1413946/update-ezlynx-personal-applicants-from-new-google-sheets-rows
+  apps:
+  - google-sheets
+  - ezlynx
+- title: Create customers in QuickBooks Online from new EZLynx commercial applicants
+  url: https://zapier.com/apps/ezlynx/integrations/quickbooks/215169/create-customers-in-quickbooks-online-from-new-ezlynx-commercial-applicants
+  apps:
+  - ezlynx
+  - quickbooks
+template_total: 243
