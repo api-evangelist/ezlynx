@@ -15,6 +15,7 @@
   evidence: https://zapier.com/apps/agencyzoom-ca67272/integrations/ezlynx/217322/create-personal-leads-in-agencyzoom-for-new-ezlynx-applicants
   template: https://zapier.com/apps/agencyzoom-ca67272/integrations/ezlynx/217322/create-personal-leads-in-agencyzoom-for-new-ezlynx-applicants
   source: template
+  relationship: ipaas-bridge
   status: pending-partner-spec
   arazzo: null
 - slug: ezlynx-update-opportunity-statuses-in-ramsey-pro-portal-from-newly-modified-opportunities-
@@ -28,6 +29,7 @@
   evidence: https://zapier.com/apps/ezlynx/integrations/ramseytrusted-pro-portal-ca20531/255568430/update-opportunity-statuses-in-ramsey-pro-portal-from-newly-modified-opportunities-in-ezlynx
   template: https://zapier.com/apps/ezlynx/integrations/ramseytrusted-pro-portal-ca20531/255568430/update-opportunity-statuses-in-ramsey-pro-portal-from-newly-modified-opportunities-in-ezlynx
   source: template
+  relationship: ipaas-bridge
   status: pending-partner-spec
   arazzo: null
 - slug: ezlynx-create-personal-applicants-in-ezlynx-for-new-personal-leads-in-agencyzoom
@@ -42,6 +44,7 @@
   evidence: https://zapier.com/apps/agencyzoom-ca67272/integrations/ezlynx/217366/create-personal-applicants-in-ezlynx-for-new-personal-leads-in-agencyzoom
   template: https://zapier.com/apps/agencyzoom-ca67272/integrations/ezlynx/217366/create-personal-applicants-in-ezlynx-for-new-personal-leads-in-agencyzoom
   source: template
+  relationship: ipaas-bridge
   status: pending-partner-spec
   arazzo: null
 - slug: ezlynx-add-new-commercial-applicants-from-ezlynx-to-sembley
@@ -55,6 +58,7 @@
   evidence: https://zapier.com/apps/ezlynx/integrations/sembley/1784352/add-new-commercial-applicants-from-ezlynx-to-sembley
   template: https://zapier.com/apps/ezlynx/integrations/sembley/1784352/add-new-commercial-applicants-from-ezlynx-to-sembley
   source: template
+  relationship: ipaas-bridge
   status: pending-partner-spec
   arazzo: null
 - slug: ezlynx-create-commercial-applicants-with-opportunities-in-ezlynx-for-new-insureds-in-sembl
@@ -68,6 +72,7 @@
   evidence: https://zapier.com/apps/ezlynx/integrations/sembley/255614126/create-commercial-applicants-with-opportunities-in-ezlynx-for-new-insureds-in-sembley-sent-to-zapier
   template: https://zapier.com/apps/ezlynx/integrations/sembley/255614126/create-commercial-applicants-with-opportunities-in-ezlynx-for-new-insureds-in-sembley-sent-to-zapier
   source: template
+  relationship: ipaas-bridge
   status: pending-partner-spec
   arazzo: null
 - slug: ezlynx-create-personal-applicants-with-opportunities-in-ezlynx-from-new-agencyzoom-leads
@@ -82,6 +87,7 @@
   evidence: https://zapier.com/apps/agencyzoom-ca67272/integrations/ezlynx/405554/create-personal-applicants-with-opportunities-in-ezlynx-from-new-agencyzoom-leads
   template: https://zapier.com/apps/agencyzoom-ca67272/integrations/ezlynx/405554/create-personal-applicants-with-opportunities-in-ezlynx-from-new-agencyzoom-leads
   source: template
+  relationship: ipaas-bridge
   status: pending-partner-spec
   arazzo: null
 - slug: ezlynx-create-new-ezlynx-applicants-with-opportunities-from-completed-canopy-connect-pulls
@@ -96,6 +102,7 @@
   evidence: https://zapier.com/apps/canopy-connect/integrations/ezlynx/1733144/create-new-ezlynx-applicants-with-opportunities-from-completed-canopy-connect-pulls
   template: https://zapier.com/apps/canopy-connect/integrations/ezlynx/1733144/create-new-ezlynx-applicants-with-opportunities-from-completed-canopy-connect-pulls
   source: template
+  relationship: ipaas-bridge
   status: pending-partner-spec
   arazzo: null
 - slug: ezlynx-update-ezlynx-personal-applicants-from-new-google-sheets-rows
@@ -110,10 +117,12 @@
   evidence: https://zapier.com/apps/ezlynx/integrations/google-sheets/1413946/update-ezlynx-personal-applicants-from-new-google-sheets-rows
   template: https://zapier.com/apps/ezlynx/integrations/google-sheets/1413946/update-ezlynx-personal-applicants-from-new-google-sheets-rows
   source: template
+  relationship: ipaas-bridge
   status: pending-partner-spec
   arazzo: null
 - slug: ezlynx-create-customers-in-quickbooks-online-from-new-ezlynx-commercial-applicants
   label: Create customers in QuickBooks Online from new EZLynx commercial applicants
+  partner: quickbooks
   partner_name: QuickBooks Online
   category: Accounting
   use_case: Create customers in QuickBooks Online from new EZLynx commercial applicants
@@ -123,287 +132,7 @@
   evidence: https://zapier.com/apps/ezlynx/integrations/quickbooks/215169/create-customers-in-quickbooks-online-from-new-ezlynx-commercial-applicants
   template: https://zapier.com/apps/ezlynx/integrations/quickbooks/215169/create-customers-in-quickbooks-online-from-new-ezlynx-commercial-applicants
   source: template
-  status: pending-partner-spec
-  arazzo: null
-- slug: ezlynx-gmail
-  label: Gmail
-  partner: gmail
-  partner_name: Gmail
-  category: Email
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/ezlynx/integrations/gmail
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: ezlynx-ringcentral
-  label: RingCentral
-  partner: ringcentral
-  partner_name: RingCentral
-  category: Phone & SMS
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/ezlynx/integrations/ringcentral
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: ezlynx-hubspot
-  label: HubSpot
-  partner: hubspot
-  partner_name: HubSpot
-  category: Marketing Automation
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/ezlynx/integrations/hubspot
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: ezlynx-microsoft-outlook
-  label: Microsoft Outlook
-  partner: microsoft-outlook
-  partner_name: Microsoft Outlook
-  category: Calendar
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/ezlynx/integrations/microsoft-outlook
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: ezlynx-leadconnector
-  label: LeadConnector
-  partner_name: LeadConnector
-  category: Marketing Automation
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/ezlynx/integrations/leadconnector
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: ezlynx-pipedrive
-  label: Pipedrive
-  partner: pipedrive
-  partner_name: Pipedrive
-  category: CRM (Customer Relationship Management)
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/ezlynx/integrations/pipedrive
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: ezlynx-quo
-  label: Quo
-  partner: quo
-  partner_name: Quo
-  category: Phone & SMS
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/ezlynx/integrations/quo
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: ezlynx-salt
-  label: SALT
-  partner_name: SALT
-  category: Forms & Surveys
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/ezlynx/integrations/salt
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: ezlynx-activecampaign
-  label: ActiveCampaign
-  partner: activecampaign
-  partner_name: ActiveCampaign
-  category: Marketing Automation
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/ezlynx/integrations/activecampaign
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: ezlynx-dialpad
-  label: Dialpad
-  partner: dialpad
-  partner_name: Dialpad
-  category: Phone & SMS
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/ezlynx/integrations/dialpad
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: ezlynx-zoho-crm
-  label: Zoho CRM
-  partner: zoho-crm
-  partner_name: Zoho CRM
-  category: CRM (Customer Relationship Management)
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/ezlynx/integrations/zoho-crm
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: ezlynx-textus
-  label: TextUs
-  partner_name: TextUs
-  category: Phone & SMS
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/ezlynx/integrations/textus
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: ezlynx-insurancexdate
-  label: InsuranceXDate
-  partner_name: InsuranceXDate
-  category: Business Intelligence
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/ezlynx/integrations/insurancexdate
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: ezlynx-twilio
-  label: Twilio
-  partner: twilio
-  partner_name: Twilio
-  category: Phone & SMS
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/ezlynx/integrations/twilio
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: ezlynx-cognito-forms
-  label: Cognito Forms
-  partner: cognito-forms
-  partner_name: Cognito Forms
-  category: Forms & Surveys
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/ezlynx/integrations/cognito-forms
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: ezlynx-kommo
-  label: Kommo
-  partner_name: Kommo
-  category: CRM (Customer Relationship Management)
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/ezlynx/integrations/kommo
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: ezlynx-salesforce
-  label: Salesforce
-  partner: salesforce
-  partner_name: Salesforce
-  category: CRM (Customer Relationship Management)
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/ezlynx/integrations/salesforce
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: ezlynx-callrail
-  label: CallRail
-  partner: callrail
-  partner_name: CallRail
-  category: Call Tracking
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/ezlynx/integrations/callrail
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: ezlynx-dialzara
-  label: DialZara
-  partner_name: DialZara
-  category: AI Assistants
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/ezlynx/integrations/dialzara
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: ezlynx-wordpress
-  label: WordPress
-  partner: wordpress
-  partner_name: WordPress
-  category: Website Builders
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/ezlynx/integrations/wordpress
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: ezlynx-bland-ai
-  label: Bland AI
-  partner: bland-ai
-  partner_name: Bland AI
-  category: AI Agents
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/ezlynx/integrations/bland-ai
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: ezlynx-fireflies-ai
-  label: Fireflies.ai
-  partner: fireflies
-  partner_name: Fireflies.ai
-  category: Transcription
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/ezlynx/integrations/fireflies
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: ezlynx-facebook-messenger
-  label: Facebook Messenger
-  partner_name: Facebook Messenger
-  category: Facebook
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/ezlynx/integrations/facebook-messenger
-  source: edge
-  status: pending-partner-spec
-  arazzo: null
-- slug: ezlynx-retell-ai
-  label: Retell AI
-  partner: retell-ai
-  partner_name: Retell AI
-  category: AI Agents
-  type: marketplace
-  marketplace: zapier
-  channel: ipaas-usage
-  evidence: https://zapier.com/apps/ezlynx/integrations/retell-ai
-  source: edge
+  relationship: ipaas-bridge
   status: pending-partner-spec
   arazzo: null
 - slug: ezlynx-zapier
@@ -430,4 +159,309 @@
     beta: false
     builder: unknown (not in the directory record)
   status: not-a-workflow
+  arazzo: null
+- slug: ezlynx-gmail
+  label: Gmail
+  partner: gmail
+  partner_name: Gmail
+  category: Email
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ezlynx/integrations/gmail
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: ezlynx-ringcentral
+  label: RingCentral
+  partner: ringcentral
+  partner_name: RingCentral
+  category: Phone & SMS
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ezlynx/integrations/ringcentral
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: ezlynx-hubspot
+  label: HubSpot
+  partner: hubspot
+  partner_name: HubSpot
+  category: Marketing Automation
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ezlynx/integrations/hubspot
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: ezlynx-microsoft-outlook
+  label: Microsoft Outlook
+  partner: microsoft-outlook
+  partner_name: Microsoft Outlook
+  category: Calendar
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ezlynx/integrations/microsoft-outlook
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: ezlynx-leadconnector
+  label: LeadConnector
+  partner_name: LeadConnector
+  category: Marketing Automation
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ezlynx/integrations/leadconnector
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: ezlynx-quo
+  label: Quo
+  partner: quo
+  partner_name: Quo
+  category: Phone & SMS
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ezlynx/integrations/quo
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: ezlynx-pipedrive
+  label: Pipedrive
+  partner: pipedrive
+  partner_name: Pipedrive
+  category: CRM (Customer Relationship Management)
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ezlynx/integrations/pipedrive
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: ezlynx-salt
+  label: SALT
+  partner_name: SALT
+  category: Forms & Surveys
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ezlynx/integrations/salt
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: ezlynx-activecampaign
+  label: ActiveCampaign
+  partner: activecampaign
+  partner_name: ActiveCampaign
+  category: Marketing Automation
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ezlynx/integrations/activecampaign
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: ezlynx-dialpad
+  label: Dialpad
+  partner: dialpad
+  partner_name: Dialpad
+  category: Phone & SMS
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ezlynx/integrations/dialpad
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: ezlynx-zoho-crm
+  label: Zoho CRM
+  partner: zoho-crm
+  partner_name: Zoho CRM
+  category: CRM (Customer Relationship Management)
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ezlynx/integrations/zoho-crm
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: ezlynx-textus
+  label: TextUs
+  partner_name: TextUs
+  category: Phone & SMS
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ezlynx/integrations/textus
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: ezlynx-insurancexdate
+  label: InsuranceXDate
+  partner_name: InsuranceXDate
+  category: Business Intelligence
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ezlynx/integrations/insurancexdate
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: ezlynx-twilio
+  label: Twilio
+  partner: twilio
+  partner_name: Twilio
+  category: Phone & SMS
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ezlynx/integrations/twilio
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: ezlynx-whatsapp-business
+  label: WhatsApp Business
+  partner: whatsapp
+  partner_name: WhatsApp Business
+  category: Phone & SMS
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ezlynx/integrations/whatsapp-business
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: ezlynx-cognito-forms
+  label: Cognito Forms
+  partner: cognito-forms
+  partner_name: Cognito Forms
+  category: Forms & Surveys
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ezlynx/integrations/cognito-forms
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: ezlynx-kommo
+  label: Kommo
+  partner_name: Kommo
+  category: CRM (Customer Relationship Management)
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ezlynx/integrations/kommo
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: ezlynx-salesforce
+  label: Salesforce
+  partner: salesforce
+  partner_name: Salesforce
+  category: CRM (Customer Relationship Management)
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ezlynx/integrations/salesforce
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: ezlynx-callrail
+  label: CallRail
+  partner: callrail
+  partner_name: CallRail
+  category: Call Tracking
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ezlynx/integrations/callrail
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: ezlynx-dialzara
+  label: DialZara
+  partner_name: DialZara
+  category: AI Assistants
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ezlynx/integrations/dialzara
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: ezlynx-wordpress
+  label: WordPress
+  partner: wordpress
+  partner_name: WordPress
+  category: Website Builders
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ezlynx/integrations/wordpress
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: ezlynx-bland-ai
+  label: Bland AI
+  partner: bland-ai
+  partner_name: Bland AI
+  category: AI Agents
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ezlynx/integrations/bland-ai
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: ezlynx-fireflies-ai
+  label: Fireflies.ai
+  partner: fireflies
+  partner_name: Fireflies.ai
+  category: Transcription
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ezlynx/integrations/fireflies
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
+  arazzo: null
+- slug: ezlynx-facebook-messenger
+  label: Facebook Messenger
+  partner_name: Facebook Messenger
+  category: Facebook
+  type: marketplace
+  marketplace: zapier
+  channel: ipaas-usage
+  evidence: https://zapier.com/apps/ezlynx/integrations/facebook-messenger
+  source: edge
+  relationship: ipaas-bridge
+  status: pending-partner-spec
   arazzo: null
