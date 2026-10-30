@@ -1,4 +1,4 @@
-# EZLynx (ezlynx)
+# EZLynx
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,84 +64,93 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-EZLynx is an insurance agency platform combining real-time comparative rating, an agency management system (AMS), and CRM for independent property and casualty (P&C) insurance agencies. It has been part of **Applied Systems** since March 2021. EZLynx offers enterprise API solutions that let agencies and technology partners push and pull data, create and update applicants, contacts, prospects, and opportunities, create policy headers, retrieve policy and quote-result data, and drive high-volume automated quoting through the **EZLynx Rating Engine** and **Quoting Automation Services (QAS)**. An event-driven layer emits webhook notifications in XML or JSON when platform data changes.
+EZLynx is an insurance agency platform combining real-time comparative rating, an agency management system (AMS), and CRM for independent property and casualty (P&C) insurance agencies. Part of Applied Systems since 2021, EZLynx offers enterprise API solutions that let agencies push and pull data, create and update applicants, contacts, prospects, and opportunities, create policy headers, retrieve policy and quote-result data, and drive high-volume automated quoting through the EZLynx Rating Engine and Quoting Automation Services (QAS). An event-driven layer emits webhooks in XML or JSON for platform changes. API access is partner and enterprise-gated (contact sales, OAuth 2.0), not a public self-serve developer program, so the API surface below is honestly modeled from EZLynx's public product and integration material rather than a published open reference.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/ezlynx/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/ezlynx/refs/heads/main/apis.yml)
+**Areas:** Insurance · Insurtech · Comparative Rating · Agency Management System · CRM · Quoting · Property and Casualty · Applied Systems
 
-## Access Model — Partner / Enterprise-Gated
+## EZLynx on APIs.io
 
-EZLynx does **not** run a public, self-serve developer program. There is:
+Everything profiled for EZLynx is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/ezlynx/](https://apis.io/providers/ezlynx/)** — or go straight to one of the APIs or properties below.
 
-- No public developer portal or open API key signup
-- No publicly published API pricing (enterprise, contact sales)
-- No openly hosted, machine-readable API reference
+### APIs (5)
 
-Public product and integration material indicates the API is **REST over HTTPS** with **OAuth 2.0** authentication and **XML or JSON** payloads, plus an **event-driven webhook** layer. A Postman-hosted collection exists as reference, but working credentials, the base URL, and the full endpoint surface are provided under a partner or enterprise agreement. Prospective integrators contact EZLynx / Applied Systems sales.
+- [EZLynx Applicants and Contacts API](https://apis.io/apis/ezlynx/ezlynx-applicants-contacts-api/) — Create and update applicants, contacts, prospects, and opportunities in the EZLynx management system and CRM so external lead-capture, marketing, and…
+- [EZLynx Rating Engine API](https://apis.io/apis/ezlynx/ezlynx-rating-engine-api/) — Submit applicant and risk data to the EZLynx Rating Engine for high-volume automated comparative quoting and retrieve quote results. Surfaces the backend…
+- [EZLynx Policies API](https://apis.io/apis/ezlynx/ezlynx-policies-api/) — Create policy headers and retrieve policy information from the EZLynx management system so downstream accounting, servicing, and reporting systems can…
+- [EZLynx Management System Data API](https://apis.io/apis/ezlynx/ezlynx-management-system-data-api/) — Read supporting management-system data - email templates, documents, and user data - so integrated applications can reuse an agency's content and org…
+- [EZLynx Events and Webhooks API](https://apis.io/apis/ezlynx/ezlynx-events-webhooks-api/) — Consume EZLynx's event-driven layer - webhook notifications delivered in XML or JSON when platform data changes, such as new clients or policy updates - to…
 
-Because of this, the APIs listed below are **honestly modeled** from EZLynx's public product pages, integration write-ups, and the referenced Postman collection description — **not** copied from a published open reference. The concrete request paths and base URL are gated, so no specific endpoint paths have been fabricated (`endpointsModeled: true` in `review.yml`).
+### Published properties
 
-## Tags
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-- Insurance
-- InsurTech
-- Comparative Rating
-- Agency Management System
-- CRM
-- Quoting
-- Property and Casualty
-- Applied Systems
+#### Security (3)
 
-## Timestamps
+Authentication, trust centre, and vulnerability disclosure.
 
-- **Created:** 2026-07-10
-- **Modified:** 2026-07-10
+- [Ezlynx Domain Security](https://apis.io/security/ezlynx/ezlynx-domain-security/)
+- [Ezlynx Trust Center](https://apis.io/security/ezlynx/ezlynx-trust-center/)
+- [Ezlynx Vulnerability Disclosure](https://apis.io/security/ezlynx/ezlynx-vulnerability-disclosure/)
 
-## APIs (Logical, Modeled)
+## Where to find this API
 
-### EZLynx Applicants and Contacts API
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-Create and update applicants, contacts, prospects, and opportunities in the EZLynx management system and CRM so external lead-capture, marketing, and onboarding tools stay in sync without rekeying data.
-
-- **Human URL:** [https://www.ezlynx.com/products/ezlynx-api-solutions/](https://www.ezlynx.com/products/ezlynx-api-solutions/)
-
-### EZLynx Rating Engine API
-
-Submit applicant and risk data to the EZLynx Rating Engine for high-volume automated comparative quoting and retrieve quote results. Surfaces the backend behind Quoting Automation Services (QAS) and EZLynx Data Bridge.
-
-- **Human URL:** [https://www.ezlynx.com/products/ezlynx-api-solutions/](https://www.ezlynx.com/products/ezlynx-api-solutions/)
-
-### EZLynx Policies API
-
-Create policy headers and retrieve policy information from the EZLynx management system for downstream accounting, servicing, and reporting.
-
-- **Human URL:** [https://www.ezlynx.com/products/ezlynx-api-solutions/](https://www.ezlynx.com/products/ezlynx-api-solutions/)
-
-### EZLynx Management System Data API
-
-Read supporting management-system data — email templates, documents, and user data — so integrated applications can reuse an agency's content and org structure.
-
-- **Human URL:** [https://www.ezlynx.com/products/ezlynx-api-solutions/](https://www.ezlynx.com/products/ezlynx-api-solutions/)
-
-### EZLynx Events and Webhooks API
-
-Consume EZLynx's event-driven layer — webhook notifications delivered in XML or JSON when platform data changes (new clients, policy updates) — to trigger downstream automation. Delivery is one-way HTTP webhook callouts, **not** a public WebSocket.
-
-- **Human URL:** [https://www.ezlynx.com/products/ezlynx-api-solutions/](https://www.ezlynx.com/products/ezlynx-api-solutions/)
-
-## Common Properties
-
-- [LinkedIn](https://www.linkedin.com/company/ezlynx)
 - [Website](https://www.ezlynx.com)
 - [Documentation](https://www.ezlynx.com/products/ezlynx-api-solutions/)
-- [API Reference (Postman)](https://documenter.getpostman.com/view/17108315/UVXjHahb)
-- [Sign Up / Enterprise](https://www.ezlynx.com/solutions/enterprise/)
+- [API reference](https://documenter.getpostman.com/view/17108315/UVXjHahb)
+- [Sign up](https://www.ezlynx.com/solutions/enterprise/)
 - [Blog](https://www.ezlynx.com/blog/)
 
-## WebSocket Review
+## API Evangelist rating
 
-EZLynx does **not** expose a documented public WebSocket API. Its own public surface is REST over HTTPS (OAuth 2.0) plus one-way HTTP webhook events; both are partner/enterprise-gated. See `review.yml`.
+**Kin Score 14.0** — emerging · rubric 0.24.0 · scored 2026-10-17
 
-## Maintainers
+| Facet | Score |
+|---|---|
+| Discoverability | 62.5 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 19.0 |
+| Access clarity | 21.1 |
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 14.9** — Insurance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/ezlynx/](https://apis.io/providers/ezlynx/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for EZLynx: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/ezlynx/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
